@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: invoice-backend-ms
+
+  jpa:
+    database:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/invoice-keep-db
+    username: postgres
+    password: 12345
+    driverClassName: org.postgresql.Driver
+    initialization-mode: never
+    initialize: false
+    separator: EOF
